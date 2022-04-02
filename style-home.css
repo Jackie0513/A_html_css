@@ -9,6 +9,33 @@ html {
 body {
   font-size: 1.6rem;
 }
+header{
+  padding: 20px 0;
+  background-color: #BBBBBB;
+}
+.caja{
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+nav li{
+  display: inline-block;
+  margin:0 0 0 1.5rem ;
+  
+}
+nav a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
 .titulo{
     padding: 1.5rem;
     text-align: center;
@@ -39,7 +66,7 @@ em strong {
 .diferenciales {
   background: #ffffff;
 }
-ul {
+.imagenDiferencialesu ul {
     vertical-align: top;
   padding: auto;
   display: inline-block;
