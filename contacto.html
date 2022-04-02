@@ -29,21 +29,38 @@
     <main>
       <form>
         <label for="nombreApellido">Nombre y Apellido</label>
-        <input type="text" id="nombreApellido" class="input-padron" />
+        <input type="text" id="nombreApellido" class="input-padron" required />
 
         <label for="correoElectronico">Correo correoElectronico</label>
-        <input type="email" id="correoElectronico" class="input-padron" />
+        <input
+          type="email"
+          id="correoElectronico"
+          class="input-padron"
+          required
+          placeholder="email@dominio.com"
+        />
 
         <label for="telefono">Telefono</label>
-        <input type="tel" id="telefono" 
-        class="input-padron" />
+        <input
+          type="tel"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(XX) XXXX XXXX"
+        />
 
         <label for="mensaje">Mensaje</label>
-        <textarea name="" id="mensaje" cols="65" rows="10"
-        class="input-padron"></textarea>
+        <textarea
+          name=""
+          id="mensaje"
+          cols="65"
+          rows="10"
+          class="input-padron"
+          required
+        ></textarea>
 
-        <div>
-          <p>¿Cómo le gustaria que lo contactemos?</p>
+        <fieldset>
+          <legend>¿Cómo le gustaria que lo contactemos?</legend>
 
           <label for="radio-email"
             ><input
@@ -69,27 +86,57 @@
               name="contacto"
               value="whatsapp"
               id="radio-whatsapp"
+              checked
             />Whatsapp</label
           >
-        </div>
+        </fieldset>
 
-        <div>
-
-            <p>¿En cuál horario prefiere ser atendido?</p>
-            <select>
-                <option value="Mañana">Mañana</option>
-                <option value="Tarde">Tarde</option>
-                <option value="Noche">Noche</option>
-            </select>
-        </div>
+        <fieldset>
+          <legend>¿En cuál horario prefiere ser atendido?</legend>
+          <select>
+            <option value="Mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noche">Noche</option>
+          </select>
+        </fieldset>
 
         <label class="checkbox"
-          ><input type="checkbox" />¿Le gustaria recibir novedaddes de la
-          Barberia Alura?</label
+          ><input type="checkbox" checked />¿Le gustaria recibir novedaddes de
+          la Barberia Alura?</label
         >
 
-        <input type="submit" value="Enviar Formulario" />
+        <input type="submit" value="Enviar Formulario" class="enviar" />
       </form>
+      <table>
+
+      <thead>
+        <tr>
+          <td>Dias</td>
+          <td>Horario</td>
+        </tr>
+
+      </thead>
+
+      <tbody>
+        
+        <tr>
+          <td>Lunes</td>
+          <td>08h ~ 20h</td>
+        </tr>
+  
+        <tr>
+          <td>Miercoles</td>
+          <td>08h ~ 20h</td>
+        </tr>
+  
+        <tr>
+          <td>Viernes</td>
+          <td>08h ~ 20h</td>
+        </tr>
+
+      </tbody>
+
+      </table>
     </main>
 
     <footer>
